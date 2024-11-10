@@ -37,7 +37,7 @@ jobs:
         timeout: 10
     - name: Autograding Reporter
       uses: classroom-resources/autograding-grading-reporter@v1
-      env: 
+      env:
         TEST0_RESULTS: "${{steps.test0.outputs.result}}"
         TEST1_RESULTS: "${{steps.test1.outputs.result}}"
       with:
